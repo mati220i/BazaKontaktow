@@ -1,0 +1,6 @@
+ikona_programu ICON "ikona_programu.ico"
+//aaaa ICON "wx/msw/std.ico"
+
+#include "wx/msw/wx.rc"
+
+//Frame->SetIcon(wxIcon(ikona_pogramu));

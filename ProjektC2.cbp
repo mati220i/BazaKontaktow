@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProjektC2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProjektC2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="C:/wxWidgets-3.0.2/lib/gcc_dll/mswud" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/wxWidgets-3.0.2/lib/gcc_dll/mswud" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw30ud_core.a" />
+					<Add library="libwxbase30ud.a" />
+					<Add library="libwxpngd.a" />
+					<Add library="libwxzlibd.a" />
+					<Add directory="C:/wxWidgets-3.0.2/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProjektC2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="C:/wxWidgets-3.0.2/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/wxWidgets-3.0.2/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw30u_core.a" />
+					<Add library="libwxbase30u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxzlib.a" />
+					<Add directory="C:/wxWidgets-3.0.2/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-Wall" />
+			<Add directory="C:/wxWidgets-3.0.2/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="C:/wxWidgets-3.0.2/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="Dodawanie.cpp" />
+		<Unit filename="Dodawanie.h" />
+		<Unit filename="Dodawanie_uzytkownika.cpp" />
+		<Unit filename="Dodawanie_uzytkownika.h" />
+		<Unit filename="Edycja.cpp" />
+		<Unit filename="Edycja.h" />
+		<Unit filename="Edycja_uzytkownika.cpp" />
+		<Unit filename="Edycja_uzytkownika.h" />
+		<Unit filename="ProjektC2App.cpp" />
+		<Unit filename="ProjektC2App.h" />
+		<Unit filename="ProjektC2Main.cpp" />
+		<Unit filename="ProjektC2Main.h" />
+		<Unit filename="Sprawdzanie_hasla.cpp" />
+		<Unit filename="Sprawdzanie_hasla.h" />
+		<Unit filename="Wyswietlanie.cpp" />
+		<Unit filename="Wyswietlanie.h" />
+		<Unit filename="Zarzadzanie.cpp" />
+		<Unit filename="Zarzadzanie.h" />
+		<Unit filename="lista.cpp" />
+		<Unit filename="lista.h" />
+		<Unit filename="lista_funkcje_pomocnicze.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="uzytkownicy.cpp" />
+		<Unit filename="uzytkownicy.h" />
+		<Unit filename="wxsmith/Dodawanie.wxs" />
+		<Unit filename="wxsmith/Dodawanie_uzytkownika.wxs" />
+		<Unit filename="wxsmith/Edycja.wxs" />
+		<Unit filename="wxsmith/Edycja_uzytkownika.wxs" />
+		<Unit filename="wxsmith/ProjektC2frame.wxs" />
+		<Unit filename="wxsmith/Sprawdzanie_hasla.wxs" />
+		<Unit filename="wxsmith/Wyswietlanie.wxs" />
+		<Unit filename="wxsmith/Zarzadzanie.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="ProjektC2App.cpp" main="ProjektC2Frame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/ProjektC2frame.wxs" src="ProjektC2Main.cpp" hdr="ProjektC2Main.h" fwddecl="0" i18n="1" name="ProjektC2Frame" language="CPP" />
+					<wxFrame wxs="wxsmith/Dodawanie.wxs" src="Dodawanie.cpp" hdr="Dodawanie.h" fwddecl="0" i18n="1" name="Dodawanie" language="CPP" />
+					<wxFrame wxs="wxsmith/Wyswietlanie.wxs" src="Wyswietlanie.cpp" hdr="Wyswietlanie.h" fwddecl="0" i18n="1" name="Wyswietlanie" language="CPP" />
+					<wxFrame wxs="wxsmith/Edycja.wxs" src="Edycja.cpp" hdr="Edycja.h" fwddecl="0" i18n="1" name="Edycja" language="CPP" />
+					<wxDialog wxs="wxsmith/Zarzadzanie.wxs" src="Zarzadzanie.cpp" hdr="Zarzadzanie.h" fwddecl="0" i18n="1" name="Zarzadzanie" language="CPP" />
+					<wxDialog wxs="wxsmith/Dodawanie_uzytkownika.wxs" src="Dodawanie_uzytkownika.cpp" hdr="Dodawanie_uzytkownika.h" fwddecl="0" i18n="1" name="Dodawanie_uzytkownika" language="CPP" />
+					<wxDialog wxs="wxsmith/Sprawdzanie_hasla.wxs" src="Sprawdzanie_hasla.cpp" hdr="Sprawdzanie_hasla.h" fwddecl="0" i18n="1" name="Sprawdzanie_hasla" language="CPP" />
+					<wxDialog wxs="wxsmith/Edycja_uzytkownika.wxs" src="Edycja_uzytkownika.cpp" hdr="Edycja_uzytkownika.h" fwddecl="0" i18n="1" name="Edycja_uzytkownika" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
